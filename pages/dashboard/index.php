@@ -60,7 +60,7 @@ require '../../includes/session.php';
                           <?php echo $total; ?>
                         </h3>
 
-                        <p>Enrolled Students DONE!</p>
+                        <p>Enrolled Students </p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-user-check"></i>
@@ -85,12 +85,12 @@ require '../../includes/session.php';
                           <?php echo $total; ?>
                         </h3>
 
-                        <p>Pending Students</p>
+                        <p>Pending Students </p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-exclamation-triangle"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      <a href="db.pending.enrollees.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                   <!-- ./col -->
@@ -106,12 +106,12 @@ require '../../includes/session.php';
                           <?php echo $total; ?>
                         </h3>
 
-                        <p>New Students</p>
+                        <p>New Students </p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-users"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      <a href="db.new.students.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                   <!-- ./col -->
@@ -127,12 +127,12 @@ require '../../includes/session.php';
                           <?php echo $total; ?>
                         </h3>
 
-                        <p>Old Students</p>
+                        <p>Old Students </p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-users"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      <a href="db.old.students.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                   <!-- ./col -->
@@ -153,7 +153,7 @@ require '../../includes/session.php';
                       <div class="icon">
                         <i class="fas fa-user-times"></i>
                       </div>
-                      <a href="<?php echo $_SESSION['role']== "Registrar" ? "../student/list.students.php" : "#"?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      <a href="<?php echo $_SESSION['role']== "Registrar" ? "../student/list.students.php" : "db.disapproved.students.php"?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                   <!-- ./col -->
