@@ -336,6 +336,33 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-folder"></i>
+              <p>
+                Strands
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../strand/add.strand.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i>
+                  <p>
+                    Add Strand
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../strand/list.strand.php" class="nav-link">
+                  <i class="nav-icon fas fa-list"></i>
+                  <p>
+                    Strand List
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <?php
             } elseif ($_SESSION['role'] == "Principal") { 
           ?>
